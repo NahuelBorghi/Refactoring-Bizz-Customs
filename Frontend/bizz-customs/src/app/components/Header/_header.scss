@@ -1,0 +1,40 @@
+.logo{height: 100%;width: 100%;text-align: center;
+    img{width: 100%;height: 100%;max-width: 10rem;filter: drop-shadow(0 0px 10px $secundario);}
+    @media screen and (min-width:900px) {img{max-width: 15rem;}}
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    .carrito{
+        height: 100%;
+        width: fit-content;
+        padding-left: 2%;
+        padding-right: 2.3%;
+        background-color:$primario;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius:10px;
+        box-shadow: 0 0 10px $primario;
+        img{
+            filter: invert(1);
+            width: 100%;
+            height: 100%;
+            max-width: 3rem;
+            max-height: 3rem;
+        }
+    }
+    div{
+        button{
+            border-color: $primario;
+            border-style: solid;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 2px;
+            box-shadow: 0 0 10px $primario;
+            background-color: $primario;
+            font-family: $yanone;
+            font-size: $mediana;
+            color: white;
+            outline: none;
+        }
+    }
+}

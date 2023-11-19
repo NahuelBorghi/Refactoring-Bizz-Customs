@@ -1,0 +1,46 @@
+nav{
+    background-color: $primario;
+    height: fit-content;
+    padding: 7px;
+    color: white;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    ul{
+        li{
+            margin: 5px;
+            padding: 3%;
+            border-radius: 5px;
+            a{
+                padding: 2%;
+            }
+            a:hover{
+                transition: 0.75s;
+                color: black;
+            }
+        }
+        li:last-child{
+            margin-right: 10%;
+        }
+        .active{
+            background-color: rgba(79, 174, 225, 0.60);
+            box-shadow: 0 0 10px $secundario;
+            transition: 0.5s;
+        }
+    }
+    #buscar{
+        padding: 0.5rem;
+        border-style: solid;
+        border-color: $secundario;
+        border-radius: 10px;
+        margin: 0.2rem;
+        transition: 0.5s;
+        box-shadow: 0 0 15px $secundario;
+    }
+    #buscar:focus{
+        padding: 0.7rem;
+        margin: 0rem;
+        transition: 1s;
+        outline: none;
+        box-shadow: 0 0 2px $secundario;
+    }
+}

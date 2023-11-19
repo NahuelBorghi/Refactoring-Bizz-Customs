@@ -1,0 +1,39 @@
+#userInfo{
+    #formInfo{
+        display: grid;
+        grid-template-areas: " direction contact " " button button ";
+        grid-gap: 2%;
+        justify-items: center;
+        div{
+            input{
+                padding: 0.5%;
+                margin: 0.8%;
+                display: block;
+            }
+            button{
+                padding: 15px;
+            }
+        }
+        #direction{
+            grid-area: direction;
+        }
+        #contact{
+            grid-area: contact;
+        }
+        #buttons{
+            grid-area: button;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    #userInfo{
+        #formInfo{
+        grid-template-areas: "direction" "contact" "button";
+        #contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        }
+    }
+}

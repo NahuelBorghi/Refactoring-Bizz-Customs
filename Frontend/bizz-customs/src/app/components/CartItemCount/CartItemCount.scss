@@ -1,0 +1,64 @@
+#agregarCarrito{
+    border: 2px solid #4faee1;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 15px;
+    p{
+        font-size: 1.6rem;
+        margin: 0px;
+        text-align: center;
+        display: block;
+    }
+    input[type="number"]{
+        display: inline;
+        border-radius: 5px 0 0 5px;
+        border: 2px solid grey;
+        text-align: center;
+        height: 36px;
+        width: 60%;
+        padding: 0;
+        margin: 10px 0 10px 0;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    }
+    input[type="button"]{
+        display: block;
+        border-radius: 5px;
+        border: 2px solid #4faee1;
+        background-color: inherit;
+        width: 100%;
+        margin: -40px 0 10px 0;
+        color: inherit;
+    }
+    button{
+        display: block;
+        position: relative;
+        bottom: 50px;
+        left: 61%;
+        color: inherit;
+    }
+    button:nth-child(2n-1){
+        background-color: inherit;
+        border-radius: 0 5px 0 0;
+        border: 2px solid grey;
+        text-align: center;
+        width: 40%;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    button:nth-child(2n){
+        background-color: inherit;
+        border-radius: 0 0 5px 0;
+        border: 2px solid grey;
+        text-align: center;
+        width: 40%;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+}
